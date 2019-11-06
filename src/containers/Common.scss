@@ -1,0 +1,56 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+ul {
+  list-style-type: none;
+}
+
+input, button {
+  outline: none;
+  &:hover {
+    cursor: pointer;
+  }
+}
+
+button:disabled {
+  background-color: #80808099 !important;
+  &:hover {
+    cursor: auto;
+  }
+}
+
+.isCompleteStatus, .isOpenedStatus, .inProgressStatus, .isDelayedStatus, .isClosed, .inMatchingStatus {
+  border-radius: 11px;
+}
+
+.isCompleteStatus {
+  background-color: #9acd32;
+}
+
+.isOpenedStatus {
+  background-color: #fd5e53;
+}
+
+.inProgressStatus {
+  background-color: #ffb02e;
+}
+
+.isDelayedStatus {
+  background-color: mediumpurple;
+}
+
+.isClosed {
+  background-color: #3cb371;
+}
+
+.inMatchingStatus {
+  background-color: #c0c0c0;
+}
+
+.usualSection {
+  margin: 20px;
+  font-weight: 700;
+}

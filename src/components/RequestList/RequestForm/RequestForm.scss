@@ -1,0 +1,85 @@
+.requestModal {
+  background-color: #ecf3f7;
+  box-shadow: 0 0 7px rgba(0, 0, 0, 0.2);
+  position: absolute;
+  top: 57px;
+  left: 42.5%;
+  width: 57.5%;
+  height: 95vh;
+  overflow-y: auto;
+  border-right: 1px solid #d7dce0;
+  &__header {
+    background-color: #1a4876;
+    color: white;
+    display: flex;
+    align-items: center;
+    padding: 10px 35px;
+    h2 {
+      white-space: nowrap;
+      margin-right: 20px;
+    }
+  }
+  &__body {
+    display: flex;
+    justify-content: space-between;
+    font-size: 14px;
+    font-weight: 300;
+    padding-left: 35px;
+    min-height: 100%;
+    .modal__left, .modal__right {
+      padding-top: 30px;
+    }
+    .modal__left {
+      width: 75%;
+    }
+    .modal__right {
+      width: 25%;
+      border-left: 1px solid #d7dce0;
+    }
+  }
+  textarea {
+    resize: none;
+    &:focus {
+      outline: none
+    }
+  }
+  .textContainer {
+    margin-bottom: 20px;
+    font-weight: 400;
+    .textContainer__name {
+      margin-bottom: 15px;
+      color: #9f9ea7;
+      &--comment {
+        margin-bottom: 20px;
+        &:hover {
+          cursor: pointer;
+        }
+      }
+    }
+  }
+  .saveButton {
+    margin-top: 50px;
+    button {
+      background-color: #008cf0;
+      padding: 10px 20px;
+      color: white;
+      border: none;
+      border-radius: 18px;
+    }
+  }
+  .errorMessage {
+    color: red;
+    font-size: 18px;
+    font-weight: 700;;
+  }
+}
+
+.closeRequestOptions {
+  font-size: 18px;
+  display: inline-block;
+  margin-left: auto;
+  align-self: flex-start;
+  &:hover {
+    cursor: pointer;
+  }
+}

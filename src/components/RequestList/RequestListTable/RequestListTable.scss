@@ -1,0 +1,49 @@
+.requestTable {
+  padding: 10px 0;
+  &__description div, &__title div {
+    display: inline-block;
+    margin-left: 1%;
+    padding-right: 1%;
+    color: #404147;
+    font-size: 16px;
+    font-weight: 400;
+    &:last-child {
+      border-right: none;
+      flex-grow: 1;
+    }
+  }
+  &__description {
+    border-top: 1px solid #e2e7ea;
+    padding: 20px 0;
+    display: flex;
+    align-items: center;
+    &:hover {
+      cursor: pointer;
+    }
+    &--status {
+      width: 10%;
+      div {
+        padding: 3px 15px;
+        color: white;
+        text-align: center;
+      }
+    }
+  }
+  &__title div {
+    border-right: 1px solid #e2e7ea;
+    font-weight: bold;
+  }
+  &__title, &__description {
+    &--id {
+      width: 9%;
+      text-align: center;
+      padding-right: 0;
+    }
+    &--name {
+      width: 27%;
+    }
+    &--status {
+      width: 10%;
+    }
+  }
+}

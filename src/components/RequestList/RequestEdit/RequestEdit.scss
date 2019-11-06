@@ -1,0 +1,23 @@
+.requestModal__body {
+  .commentContainer {
+    margin-top: 30px;
+    padding-right: 25px;
+    .commentContent {
+      margin-bottom: 35px;
+      &__author {
+        color: black;
+        padding-bottom: 15px;
+      }
+      &__createdTime {
+        margin: 20px 0;
+        font-size: 13px;
+        color: #63677c;
+      }
+      &__text {
+        background-color: #e3e9f4;
+        padding: 10px;
+        border-radius: 5px;
+      }
+    }
+  }
+}
